@@ -1,0 +1,17 @@
+# Presentationsmaterial only
+.DS_Store
+Thumbs.db
+~$*
+*.tmp
+*.log
+.env
+.env.*
+*.pfx
+*.p12
+*.pem
+*.key
+node_modules/
+underlag/
+.tools/
+__pycache__/
+leveranser/

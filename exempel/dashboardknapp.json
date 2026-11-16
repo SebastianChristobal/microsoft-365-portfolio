@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "a",
+  "attributes": {
+    "href": "='/sites/project-portal/SitePages/projekt.aspx?projectId=' + [$ID]",
+    "target": "_self",
+    "title": "Öppna projektets dashboard"
+  },
+  "style": {
+    "display": "inline-flex",
+    "align-items": "center",
+    "padding": "4px 12px",
+    "border-radius": "4px",
+    "background-color": "#005a9e",
+    "color": "white",
+    "text-decoration": "none"
+  },
+  "txtContent": "Öppna projekt"
+}
