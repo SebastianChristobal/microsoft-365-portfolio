@@ -53,3 +53,7 @@ PowerShell-moduler provisionerar hubb och sajter, bibliotek, metadata, innehåll
 Grundportalen och SPFx-apparna är installerade i pilotmiljön. Dokumentmallar och pilotinnehåll har provats. Sökning och avtalsöversikt är kontrollerade i en autentiserad SharePoint-session. Samlad kundacceptans och fullständig behörighetsprovning återstår.
 
 Automatisk avtals-ID-tilldelning med Power Automate är ett dokumenterat tillägg som ännu inte är byggt. Elektronisk signering och integration med externa motpartsregister är inte levererade funktioner.
+
+## Planerad körmiljö i Azure
+
+PowerShell-provisioneringen ska köras som bakgrundsjobb i **Azure Functions**, med kundkonfiguration, beständig kö, journal och verifiering. Samma arkitekturprincip gäller båda portalerna. I dagens pilot startas skripten fortfarande lokalt; Azure-körmiljön är ännu inte implementerad. Se [målarkitekturen](../ARKITEKTUR.md).

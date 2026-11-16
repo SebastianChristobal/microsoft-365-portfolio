@@ -46,7 +46,7 @@ Jag använder SharePoints standardfunktioner där de uppfyller behovet och bygge
 
 [Arkitekturdiagram och designval](ARKITEKTUR.md) visar dagens pilotlösningar och den planerade produktionsarkitekturen. [Status och verifiering](STATUS.md) skiljer mellan installerat, testat och fortsatt utveckling.
 
-Provisioneringen i piloterna körs från lokal PowerShell. **Azure Automation, Azure Functions och automatiserat beställningsgodkännande är dokumenterade alternativ för fortsatt utveckling och är inte driftsatta.** Power Automate är ett möjligt tillägg, inte en förutsättning för dagens dashboard.
+**Azure Functions är den valda målarkitekturen för att köra PowerShell-baserad provisionering för både Avtalsportalen och Projektportalen.** Återanvändbara PowerShell-moduler ska köras som bakgrundsjobb med beständig kö, journal och verifiering. Piloterna körs fortfarande från lokal PowerShell; Azure-körmiljön är planerad och ännu inte implementerad. Power Automate kan komplettera beställning och godkännande, men är inte förutsättningen för dagens dashboard.
 
 ## Dokument och exempel
 

@@ -11,7 +11,7 @@ Status avser pilotarbetet den 16 november 2026. Piloterna är inte produktionsgo
 | Projektarbetsytor | Teams, SharePoint, Planner och pilotinnehåll | Första projektet och 15 ytterligare projekt levererade. De 15 har 60 dokument och åtta Planner-aktiviteter per projekt. |
 | Projektdashboard | SPFx-app och gemensam dashboardsida | Autentiserad läsning verifierad. Skrivflöden provade i lokal testkopia; verkliga skrivprov och rolltester återstår. |
 | Projektstatistik | Separat SPFx-app och statistiksida | Autentiserad läsning av 16 pilotprojekt. Nyckeltalen är testdata, inte uppmätta kundresultat. |
-| Produktionsdrift i Azure | Dokumenterad målarkitektur | Inte driftsatt. Automation och Functions är alternativ att utvärdera. |
+| Produktionsdrift i Azure | Azure Functions med PowerShell vald som målarkitektur för båda portalerna | Ännu inte implementerad eller driftsatt. Piloterna körs lokalt. |
 | Automatiserat godkännande | Beskrivet som framtida steg | Inte implementerat i Projektportalens pilot. |
 | Automatisk avtalsidentitet | Beslutat tillägg med Power Automate | Inte byggt. |
 | Arkivering och extern samverkan | Dokumenterade behov | Fullständig arkiveringsfunktion och verifierad gästmodell återstår. |

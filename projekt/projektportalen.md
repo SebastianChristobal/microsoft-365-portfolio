@@ -51,3 +51,7 @@ En separat app sammanställer projektregistrets uppgifter. Urval görs efter bla
 Det första testprojektet kompletteras av 15 projekt med varierande typ, datum och status. De 15 har Teams-ytor, två bibliotek per projekt, Planner-planer med åtta aktiviteter per projekt samt sammanlagt 60 testdokument.
 
 Dashboard och statistik är installerade och publicerade. Autentiserad läsning av register och Planner är verifierad. Automatisk beställningsprövning, obevakad Azure-drift och arkivering är fortsatt utveckling. Extern delning och kundens gästmodell behöver beslutas och provas inför ett kundinförande.
+
+## Planerad körmiljö i Azure
+
+PowerShell-provisioneringen ska köras som bakgrundsjobb i **Azure Functions**, med kundkonfiguration, beständig kö, journal och verifiering. Samma arkitekturprincip gäller båda portalerna. I dagens pilot startas skripten fortfarande lokalt; Azure-körmiljön är ännu inte implementerad. Se [målarkitekturen](../ARKITEKTUR.md).

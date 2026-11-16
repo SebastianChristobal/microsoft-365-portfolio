@@ -49,20 +49,28 @@ flowchart TD
 - **Verifiering efter skapande.** En returnerad API-respons är inte ensam ett kvitto på en färdig arbetsyta. Resurser och konfiguration läses tillbaka.
 - **Separata apppaket.** Sökning, avtalsöversikt, projektdashboard och statistik kan byggas och uppdateras oberoende.
 
-## Målbild för obevakad projektprovisionering
+## Gemensam målarkitektur med Azure Functions
+
+Azure Functions är vald som planerad körmiljö för PowerShell-provisioneringen i **båda portalerna**. Detta ersätter tidigare utvärdering av Automation och Functions som parallella alternativ. Azure Automation ingår inte i den valda målbilden.
 
 ```mermaid
 flowchart TD
-    A["Projektbeställning"] --> B["Godkännande och beständig beställningslagring"]
-    B --> C{"Val av körmiljö"}
-    C --> D["Alternativ A Azure Automation med PowerShell-runbook"]
-    C --> E["Alternativ B Azure Functions och vid behov Durable Functions"]
-    D --> F["Provisioneringssteg via Graph och SharePoint"]
+    A["Godkänd beställning eller administrativ provisioneringsbegäran"] --> B["Behörighetskontroll och beständig kö"]
+    B --> C["Azure Functions med PowerShell"]
+    K["Kundkonfiguration och mallar"] --> C
+    C --> D["Avtalsportalen Hubb, avdelningssajter och avtalsbibliotek"]
+    C --> E["Projektportalen Projektregister, Teams, SharePoint och Planner"]
+    D --> F["Verifiering, beständig journal och jobbstatus"]
     E --> F
-    F --> G["Verifiering, journal och återrapportering"]
-    G --> H["Samma projektregister och dashboard"]
+    F --> G["Återrapportering till operatör eller projektregister"]
 ```
 
-Automation och Functions är alternativa körmiljöer, inte två obligatoriska tjänster. Power Automate kan användas för godkännande och jobbstart. Piloten använder inget av dessa bakgrundsflöden.
+För Avtalsportalen körs de administrativa stegen för portal, avdelningar, dokumentmodell och installation från en kontrollerad provisioneringsbegäran. För Projektportalen behandlas godkända projektbeställningar och resurs-ID:n, länkar och leveransstatus återrapporteras till projektregistret. Körmiljön är gemensam som arkitekturprincip; portalerna har egna moduler, konfigurationer och jobbtyper.
 
-Före produktion behöver API-stöd för obevakad identitet verifieras per operation. Beständig lagring, köhantering, samtidighet, övervakning, återförsök, licenser och driftansvar behöver fastställas. Dagens delegerade inloggning kan inte utan vidare ersättas med samma behörighetsmodell i ett bakgrundsjobb.
+PowerShell-modulerna ska återanvändas med anpassad autentisering och startpunkt. Långvarig provisionering ska inte ligga i ett enda långt HTTP-anrop. Beställningen kvitteras separat och arbetet utförs i bakgrunden. Durable Functions kan utvärderas om väntesteg och orkestrering kräver det; det är inte ett beslutat krav.
+
+Power Automate kan användas för verksamhetens godkännande eller jobbstart. Det ersätter inte provisioneringsmotorn och behövs inte enbart för att skriva tillbaka resultat. Vanlig användning av SPFx-webbdelarna fortsätter via SharePoint REST och Graph; varje dashboardvisning startar inte en Function.
+
+**Status:** målarkitekturen är beslutad som riktning, men inga Azure Functions är implementerade eller driftsatta i piloterna. De körs fortfarande lokalt i PowerShell.
+
+Före produktion behöver API-stöd för obevakad identitet verifieras per operation. Beständig lagring, köhantering, samtidighet, övervakning, återförsök, hosting, licenser och driftansvar behöver fastställas. Dagens delegerade inloggning kan inte utan vidare ersättas med samma behörighetsmodell i ett bakgrundsjobb. Dessa införandepunkter gäller båda portalerna.
