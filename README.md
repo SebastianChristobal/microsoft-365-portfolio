@@ -4,14 +4,15 @@
 
 Jag utvecklar återanvändbara lösningar för avtals- och projekthantering i Microsoft 365. Här visar jag hur jag kopplar verksamhetsbehov till informationsarkitektur, provisioneringskod och anpassade användargränssnitt.
 
-Portföljen presenterar två egenutvecklade pilotlösningar. Arbetet omfattar krav och workshopunderlag, informationsmodellering, utveckling, installation, testning och teknisk dokumentation. Verksamhetsdata är fiktiva. Lösningarna är piloter i egen miljö, inte referenser till genomförda kunduppdrag.
+Portföljen omfattar två egenutvecklade portalpiloter och ett projekt för gemensam AI-agentstyrning. Arbetet omfattar krav och workshopunderlag, informationsmodellering, utveckling, installation, testning och teknisk dokumentation. Verksamhetsdata är fiktiva och piloterna genomförs i egen miljö.
 
-## Två projektcase
+## Tre projektcase
 
 | Projekt | Verksamhetsbehov | Lösning |
 |---|---|---|
 | [Avtalsportalen](projekt/avtalsportalen.md) | Hitta rätt avtal och följa upp ansvar och datum | SharePoint-hubb, avdelningsbibliotek, metadata, dokumentmallar, egen sökning och avtalsöversikt |
 | [Projektportalen](projekt/projektportalen.md) | Samla projektbeställning, samarbete och uppföljning | Projektregister, Teams-ytor, SharePoint, Planner, projektdashboard och portföljstatistik |
+| [AI-agentstyrning i Microsoft 365](projekt/ai-agentstyrning.md) | Ha kontroll över vilka agenter organisationen skapar, vad de får göra och vem som ansvarar | Gemensamma krav för registrering, riskbedömning, godkännande och uppföljning. Prövas först med portalernas agenter. |
 
 ### Avtalsportalen
 
