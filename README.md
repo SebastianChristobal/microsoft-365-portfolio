@@ -10,9 +10,9 @@ Portföljen omfattar två egenutvecklade portalpiloter och ett projekt för geme
 
 | Projekt | Verksamhetsbehov | Lösning |
 |---|---|---|
-| [Avtalsportalen](projekt/avtalsportalen.md) | Hitta rätt avtal och följa upp ansvar och datum | SharePoint-hubb, avdelningsbibliotek, metadata, dokumentmallar, egen sökning och avtalsöversikt |
-| [Projektportalen](projekt/projektportalen.md) | Samla projektbeställning, samarbete och uppföljning | Projektregister, Teams-ytor, SharePoint, Planner, projektdashboard och portföljstatistik |
-| [AI-agentstyrning i Microsoft 365](projekt/ai-agentstyrning.md) | Ha kontroll över vilka agenter organisationen skapar, vad de får göra och vem som ansvarar | Gemensamma krav för registrering, riskbedömning, godkännande och uppföljning. Prövas först med portalernas agenter. |
+| [Avtalsportalen](projekt/avtalsportalen.md) | Hitta rätt avtal och följa upp ansvar och datum | SharePoint-hubb, avdelningsbibliotek, metadata, dokumentmallar, sökning och avtalsöversikt. Arbetsguider planeras. |
+| [Projektportalen](projekt/projektportalen.md) | Samla projektbeställning, samarbete och uppföljning | Projektregister, Teams-ytor, SharePoint, Planner, projektdashboard och portföljstatistik. Arbetsguider planeras. |
+| [AI-agentstyrning i Microsoft 365](projekt/ai-agentstyrning.md) | Ha kontroll över vilka agenter organisationen skapar, vad de får göra och vem som ansvarar | Gemensamma krav för registrering, riskbedömning, godkännande och uppföljning. IT-hjälpen är första pilotcase. |
 
 ### Avtalsportalen
 
@@ -66,4 +66,4 @@ Mitt fokus är att skapa en sammanhängande lösning från krav och informations
 
 Materialet är granskat för publicering utan tenantadresser, e-postadresser, åtkomsttoken eller interna konfigurationsfiler. Se [publiceringsavgränsningen](PUBLICERING.md) och [rättigheter](RATTIGHETER.md).
 
-Senast uppdaterad 16 november 2026.
+Senast uppdaterad 23 november 2026.

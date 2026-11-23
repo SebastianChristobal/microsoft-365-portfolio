@@ -54,6 +54,10 @@ Grundportalen och SPFx-apparna är installerade i pilotmiljön. Dokumentmallar o
 
 Automatisk avtals-ID-tilldelning med Power Automate är ett dokumenterat tillägg som ännu inte är byggt. Elektronisk signering och integration med externa motpartsregister är inte levererade funktioner.
 
+## Planerade arbetsguider
+
+SharePoint-sidan **Så jobbar vi här** ska guida medarbetare till rätt avtalsbibliotek och visa hur de hittar och registrerar avtal samt följer upp slutdatum och sista uppsägningsdag. Varje guide ska ange vem som utför uppgiften, stegen i arbetet och vem som håller instruktionen aktuell.
+
 ## Planerad körmiljö i Azure
 
 PowerShell-provisioneringen ska köras som bakgrundsjobb i **Azure Functions**, med kundkonfiguration, beständig kö, journal och verifiering. Samma arkitekturprincip gäller båda portalerna. I dagens pilot startas skripten fortfarande lokalt; Azure-körmiljön är ännu inte implementerad. Se [målarkitekturen](../ARKITEKTUR.md).

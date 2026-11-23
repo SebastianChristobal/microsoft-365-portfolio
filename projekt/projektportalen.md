@@ -52,6 +52,10 @@ Det första testprojektet kompletteras av 15 projekt med varierande typ, datum o
 
 Dashboard och statistik är installerade och publicerade. Autentiserad läsning av register och Planner är verifierad. Automatisk beställningsprövning, obevakad Azure-drift och arkivering är fortsatt utveckling. Extern delning och kundens gästmodell behöver beslutas och provas inför ett kundinförande.
 
+## Planerade arbetsguider
+
+SharePoint-sidan **Så jobbar vi här** ska visa hur medarbetare registrerar ett projekt, beställer en projektyta, hittar projektdokument och uppdaterar projektstatus. Varje guide ska länka till rätt arbetsyta och ange vem som ansvarar för att instruktionen är aktuell.
+
 ## Planerad körmiljö i Azure
 
 PowerShell-provisioneringen ska köras som bakgrundsjobb i **Azure Functions**, med kundkonfiguration, beständig kö, journal och verifiering. Samma arkitekturprincip gäller båda portalerna. I dagens pilot startas skripten fortfarande lokalt; Azure-körmiljön är ännu inte implementerad. Se [målarkitekturen](../ARKITEKTUR.md).
