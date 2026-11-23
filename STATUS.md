@@ -1,6 +1,6 @@
 # Status och verifiering
 
-Status avser pilotarbetet den 16 november 2026. Piloterna är inte produktionsgodkända kundlösningar.
+Status sammanfattar pilotarbetet i egen miljö. Avtalsportalen och Projektportalen avser den 16 november 2026. Medarbetarservice avser den 23 november 2026.
 
 | Område | Byggt och installerat | Verifiering och avgränsning |
 |---|---|---|
@@ -15,6 +15,8 @@ Status avser pilotarbetet den 16 november 2026. Piloterna är inte produktionsgo
 | Automatiserat godkännande | Beskrivet som framtida steg | Inte implementerat i Projektportalens pilot. |
 | Automatisk avtalsidentitet | Beslutat tillägg med Power Automate | Inte byggt. |
 | Arkivering och extern samverkan | Dokumenterade behov | Fullständig arkiveringsfunktion och verifierad gästmodell återstår. |
+| Medarbetarservice | SharePoint-sajt, liststyrd SPFx-webbdel, produktkatalog, beställningslista och separata innehållstyper | Katalogläsning och simulerat inskick är provade. Riktiga inskick och rolltest med medarbetarkonton återstår. |
+| Medarbetarservices kundinförande | Sammanhängande PowerShell-körplan, workshopunderlag och konfigurationsmall för beställningstyper och fält | Verify körd i befintlig pilot. Nyinstallation med kundkonfiguration återstår att verifiera. |
 
 ## Hur kvaliteten prövas
 

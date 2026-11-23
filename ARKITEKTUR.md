@@ -41,6 +41,12 @@ flowchart TD
     R --> ST["Separat SPFx-app för statistik"]
 ```
 
+## Medarbetarservice i piloten
+
+SPFx-webbdelen på SharePoint-sajten läser **Ingångar → Tjänster → Produktkatalog**. Uppslagskolumner styr vilka tjänster och produkter som hör till respektive val. Utrustningsformuläret använder medarbetarens SharePoint-behörighet för att spara en post i **Beställningar**. Behörighetsbegäran öppnar SharePoints formulär för sin innehållstyp.
+
+PowerShell provisionerar sajten, listorna, innehållstyperna och webbdelen i ordning. En kundkonfiguration kan lägga till beställningstyper och kolumner som definieras under workshoppen. [Projektcase och diagram för Medarbetarservice](projekt/medarbetarservice.md)
+
 ## Principer i utvecklingen
 
 - **Konfiguration före kopierad kod.** Bibliotek, metadata och projektmallar kan anpassas per kund genom konfiguration.
