@@ -13,7 +13,7 @@ Portföljen omfattar tre egenutvecklade portalpiloter och ett projekt för gemen
 | [Avtalsportalen](projekt/avtalsportalen.md) | Hitta rätt avtal och följa upp ansvar och datum | SharePoint-hubb, avdelningsbibliotek, metadata, dokumentmallar, sökning och avtalsöversikt. Arbetsguider planeras. |
 | [Projektportalen](projekt/projektportalen.md) | Samla projektbeställning, samarbete och uppföljning | Projektregister, Teams-ytor, SharePoint, Planner, projektdashboard och portföljstatistik. Arbetsguider planeras. |
 | [AI-agentstyrning i Microsoft 365](projekt/ai-agentstyrning.md) | Ha kontroll över vilka agenter organisationen skapar, vad de får göra och vem som ansvarar | Gemensamma krav för registrering, riskbedömning, godkännande och uppföljning. IT-hjälpen är första pilotcase. |
-| [Medarbetarservice](projekt/medarbetarservice.md) | Samla interna beställningar, support och onboarding på en plats | SharePoint-listor styr ingångar, tjänster och produktutbud. SPFx tar medarbetaren från produktval till beställning. |
+| [Medarbetarportalen](projekt/medarbetarservice.md) | Samla interna IT-beställningar och support på en plats | SharePoint och SPFx ger stöd för produktval och beställning. Power Automate kopplar ihop chefsgodkännande, IT:s handläggning och Teams-aviseringar. |
 
 ### Avtalsportalen
 
@@ -33,9 +33,9 @@ En separat statistikapp sammanställer portföljen och gör det möjligt att fö
 
 *Bilderna visar installerade piloter med testdata. Namn på projekt och verksamheter är fiktiva. Sebastian Pavez förekommer som projektansvarig och författare; övriga personnamn avser testkonton. Kontomenyer och adressfält ingår inte i bilderna.*
 
-### Medarbetarservice
+### Medarbetarportalen
 
-Medarbetaren hittar **Beställningar**, **Support och hjälp** och **Onboarding** på samma startsida. IT-utrustning beställs direkt i SPFx-webbdelen. Katalogansvariga kan ändra vilka produkter som visas och portalansvariga kan administrera ingångar och tjänster i SharePoint. [Projektcase och pilotstatus](projekt/medarbetarservice.md)
+Medarbetaren hittar **Beställningar** och **Support och hjälp** på samma startsida. IT-utrustning beställs direkt i SPFx-webbdelen. Piloten omfattar också en förhandsvisning av **Beställ åt medarbetare**, där chefen väljer avdelning, roll och rollval. [Projektcase och pilotstatus](projekt/medarbetarservice.md)
 
 ## Teknik och arbetssätt
 
